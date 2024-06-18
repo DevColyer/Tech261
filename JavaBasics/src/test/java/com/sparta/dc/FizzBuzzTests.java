@@ -15,16 +15,25 @@ public class FizzBuzzTests {
 
 
     @ParameterizedTest
-    @CsvSource({
+    @CsvSource({    // list of ramdom primes
             "1, 1",
             "2, 2",
             "7, 7",
-            "99, 99"
+            "79, 79",
+            "29, 29",
+            "431, 431",
+            "281, 281",
+            "647, 647",
+            "61, 61",
+            "317, 317",
+            "487, 487",
+            "503, 503",
+            "769, 769"
     })
-    @DisplayName("Given an input number, return the input as a string")
+    @DisplayName("Given an input number, return the input if it's not divisible by 3 | 5")
     void testFizzBuzzReturnsInput(int input, String expected) {
         // act
-        String actual = FizzBuzz.getFizzBuzzFrom(input);
+        String actual = FizzBuzz.getFizzBuzz(input);
 
         // assert
         Assertions.assertEquals(expected, actual);
