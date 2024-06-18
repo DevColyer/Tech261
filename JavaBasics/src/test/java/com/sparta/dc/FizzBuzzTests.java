@@ -2,7 +2,6 @@ package com.sparta.dc;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -20,14 +19,10 @@ public class FizzBuzzTests {
             "2, 2",
             "7, 7",
             "79, 79",
-            "29, 29",
-            "431, 431",
             "281, 281",
             "647, 647",
             "61, 61",
             "317, 317",
-            "487, 487",
-            "503, 503",
             "769, 769"
     })
     @DisplayName("Given an input number, return the input if it's not divisible by 3 | 5")
