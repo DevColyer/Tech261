@@ -14,7 +14,7 @@ public class FizzBuzzTests {
 
 
     @ParameterizedTest
-    @CsvSource({    // list of ramdom primes
+    @CsvSource({    // list of random primes
             "1, 1",
             "2, 2",
             "7, 7",
