@@ -7,7 +7,7 @@ public class App {
         System.out.println(getIntegerConcat(new int[]{1, 0, 2, 4}));
     }
 
-    //18/06/2024
+    // 18/06/2024
     public static int getIntegerConcat(int[] arr) {
         StringBuilder concatVal = new StringBuilder();
         for (int i : arr) {

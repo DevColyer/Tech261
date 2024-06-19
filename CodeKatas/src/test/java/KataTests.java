@@ -18,6 +18,7 @@ public class KataTests {
         }
     }
 
+    // 18/06/2024
     static Stream<IntToIntArrayTestData> getIntToIntArrayTestData() {
         return Stream.of(
                 new IntToIntArrayTestData(new int[]{0, 0, 1, 2, 3}, 123), // leading 0s
