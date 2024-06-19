@@ -8,10 +8,9 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-public class KataTests {
-
-    // 18/06/2024 - consider future extensions to your code, use single tests for these cases
-    //              tests should test for ONE particular outcome not each case
+// 18/06/2024 - consider future extensions to your code, use single tests for these cases
+//              tests should test for ONE particular outcome not each case
+public class Kata1Tests {
     static Stream<Arguments> getIntArrayToIntTestData() {
         return Stream.of(
                 Arguments.of(new int[]{0, 0, 1, 2, 3}, 123), // leading 0s
@@ -26,7 +25,7 @@ public class KataTests {
     @MethodSource("getIntArrayToIntTestData")
     @DisplayName("Given a series of integers, return the integer value of the appended digits")
     void testGetIntegerConcat(int[] input, int expected) {
-        int actual = App.getIntegerConcat(input);
+        int actual = Kata1.getIntegerConcat(input);
         Assertions.assertEquals(expected, actual);
     }
 
@@ -42,7 +41,7 @@ public class KataTests {
     @ParameterizedTest
     @MethodSource("getLeadingZeroData")
     void testLeadingZeros(int[] input,int expected){
-        int actual = App.getIntegerConcat(input);
+        int actual = Kata1.getIntegerConcat(input);
         Assertions.assertEquals(expected, actual);
 
     }
