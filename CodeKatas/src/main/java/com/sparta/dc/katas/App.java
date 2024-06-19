@@ -11,7 +11,7 @@ public class App {
     public static int getIntegerConcat(int[] arr) {
         StringBuilder concatVal = new StringBuilder();
         for (int i : arr) {
-            concatVal.append(Integer.toString(Math.abs(i)));
+            concatVal.append(Math.abs(i));
         }
 
         return concatVal.toString().isEmpty() ? 0 : Integer.parseInt(concatVal.toString());

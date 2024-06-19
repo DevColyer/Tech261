@@ -7,5 +7,8 @@ public class App {
 
         myDog.play("Boss");
         myCat.play();
+
+        myCat.drink();
+        myDog.drink();
     }
 }

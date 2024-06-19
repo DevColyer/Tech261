@@ -1,7 +1,7 @@
 package com.sparta.dc;
 
 // state and behaviour
-public abstract class Animal {
+public abstract class Animal implements Sleepable, Drinkable{
     private String name;
     private String breed;
     private int age;
@@ -38,5 +38,14 @@ public abstract class Animal {
 
     public void play(){
         System.out.println(name + " wants to play.\n");
+    }
+
+    //implements Sleepable, Drinkable
+    @Override
+    public void drink() {
+        Sleepable.super.drink();
+        Drinkable.super.drink();
+        System.out.println(Sleepable.litres);
+        // you can choose which interface to use? or both?
     }
 }

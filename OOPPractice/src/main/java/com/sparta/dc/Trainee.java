@@ -1,6 +1,6 @@
 package com.sparta.dc;
 
-public class Trainee {
+public abstract class Trainee {
     private String name;
     private int age;
     private String email;
@@ -16,6 +16,10 @@ public class Trainee {
     //Getters & Setters
     public String getName() {
         return name;
+    }
+
+    private void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
