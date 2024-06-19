@@ -22,6 +22,7 @@ public class KataTests {
         return Stream.of(
                 new IntToIntArrayTestData(new int[]{0, 0, 1, 2, 3}, 123), // leading 0s
                 new IntToIntArrayTestData(new int[]{1, 23, 4, 5}, 12345), // multiple digits
+                new IntToIntArrayTestData(new int[]{3, -6, -2, -8}, 3628), // handle negatives
                 new IntToIntArrayTestData(new int[]{1}, 1), // single digit
                 new IntToIntArrayTestData(new int[]{}, 0) // empty array
         );
@@ -30,8 +31,8 @@ public class KataTests {
     @ParameterizedTest
     @MethodSource("getIntToIntArrayTestData")
     @DisplayName("Given a series of integers, return the integer value of the appended digits")
-    void testWeek2Kata1(IntToIntArrayTestData testData) {
-        int actual = App.getWeek2Kata1(testData.input);
+    void testGetIntegerConcat(IntToIntArrayTestData testData) {
+        int actual = App.getIntegerConcat(testData.input);
         Assertions.assertEquals(testData.expected, actual);
     }
 }
