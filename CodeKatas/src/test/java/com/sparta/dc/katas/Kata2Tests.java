@@ -14,6 +14,7 @@ public class Kata2Tests {
         return Stream.of(
                 Arguments.of((Object) new int[]{3, 4}),
                 Arguments.of((Object) new int[]{0}),
+                Arguments.of((Object) (int[])null),
                 Arguments.of((Object) new int[]{})
         );
     }
