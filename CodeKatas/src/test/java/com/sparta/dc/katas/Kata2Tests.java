@@ -22,7 +22,7 @@ public class Kata2Tests {
     @ParameterizedTest
     @MethodSource("getLessThanThreeData")
     void checkArrayShorterThanThree(int[] input) {
-        boolean actual = Kata2.areThereThreeIdenticalNeighboursInARow(input);
+        boolean actual = Kata2.hasXInARow(input);
         Assertions.assertFalse(actual);
     }
 
@@ -44,7 +44,7 @@ public class Kata2Tests {
     @ParameterizedTest
     @MethodSource("getNoMatchingData")
     void checkNoMatchingData(int[] input) {
-        boolean actual = Kata2.areThereThreeIdenticalNeighboursInARow(input);
+        boolean actual = Kata2.hasXInARow(input);
         Assertions.assertFalse(actual);
     }
 
@@ -65,7 +65,7 @@ public class Kata2Tests {
     @ParameterizedTest
     @MethodSource("getMatchingData")
     void checkMatchingData(int[] input) {
-        boolean actual = Kata2.areThereThreeIdenticalNeighboursInARow(input);
+        boolean actual = Kata2.hasXInARow(input);
         Assertions.assertTrue(actual);
     }
 }
