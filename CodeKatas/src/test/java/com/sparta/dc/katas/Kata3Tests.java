@@ -111,6 +111,7 @@ public class Kata3Tests {
                 new StringToStringArrayTestData("The madam was last in her kayak.", new String[]{"madam", "kayak"}),
                 new StringToStringArrayTestData("Anna          and           Otto        went             for             a        drive          in          their         car.", new String[]{"anna", "otto"}),
                 new StringToStringArrayTestData("Eve and Ava found a radar and a rotor in the attic", new String[]{"radar", "rotor"}),
+                new StringToStringArrayTestData("Dad Mum Dad Mum DaD MUM DAD mUM", new String[]{"dad", "mum"}),
                 new StringToStringArrayTestData("-I- -g-o-t- -t-h-i-s- -n-e-w- -r-a-c-i-n-g- -g-a-m-e- -a-n-d- -I-'-m- -s-t-u-c-k- -o-n- -t-h-e- -c-i-v-i-c- -l-e-v-e-l-.-", new String[]{"civic", "level"})
         );
     }

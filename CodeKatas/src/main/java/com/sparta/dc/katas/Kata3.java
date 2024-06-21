@@ -1,6 +1,7 @@
 package com.sparta.dc.katas;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -58,6 +59,8 @@ public class Kata3 {
         Pattern pattern = Pattern.compile("([a-zA-Z]+)");
         Matcher matcher = pattern.matcher(input.toLowerCase());
 
+//        finalStrings = new ArrayList<>(List.of(input.toLowerCase().split(" ")));
+
         while (matcher.find()) {
             finalStrings.add(matcher.group());
         }
@@ -74,7 +77,7 @@ public class Kata3 {
     }
 
     public static ArrayList<String> getLongestPalindrome(String input) {
-        if (input == null || input.length() < MINIMUM_STR_LEN) new ArrayList<>();
+        if (input == null || input.length() < MINIMUM_STR_LEN) return new ArrayList<>();
 
         ArrayList<String> longestPalindromes = new ArrayList<>();
         ArrayList<String> wordsToCheck = getWordsFromString1(input);
