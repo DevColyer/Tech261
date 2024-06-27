@@ -16,7 +16,7 @@ public class Kata3 {
 
 
     static {
-        LOGGER.setLevel(Level.ALL);
+        LOGGER.setLevel(Level.OFF);
         LOGGER.setUseParentHandlers(false);
         ConsoleHandler consoleHandler = new ConsoleHandler();
         consoleHandler.setLevel(Level.ALL);
